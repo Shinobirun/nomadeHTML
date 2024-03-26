@@ -1,0 +1,332 @@
+:root {
+    --color-primary: #1746a2;
+    --color-secondary: #Ff731d;
+    --color-accent: #bbb737f8;
+    --color-background: #579df7;
+    --color-text1:#ffffff;
+    --color-text2:#072566;
+    --color-border1:#ccc;
+    --color-backForm1:#ffffffcc;
+    --color-shadowForm1:#00000033;
+}   
+    /* Establecer una imagen de fondo */
+    body {
+
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-image: url('../images/playaMuelle.jpg');
+        background-size: cover; 
+        background-attachment: fixed; 
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        
+    }
+    
+
+    header {
+        display: grid;
+        grid-template-columns: 1fr auto; 
+        align-items: center; 
+        background-color: var(--color-accent);
+        opacity: 1;
+        padding: 10px 0;
+    }   
+
+    header:hover {
+        opacity: .9  ;
+    }
+
+    .logo {
+        text-align: left; /
+        padding-left: 10%   ;
+        
+    }
+
+    nav {
+        text-align: right; 
+    }
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        display: inline;
+        margin-right: 20px; 
+        
+    }
+
+    a {
+        text-decoration: none;
+        color: var(--color-primary); 
+        font-weight: bold;
+        
+    }
+
+    a:hover {
+        text-decoration: none;
+        color: var(--color-secondary); 
+        font-weight: bold;
+
+    }
+
+    
+
+    img{
+        height: 30px;
+    }   
+
+    .logo img {
+        height: 100px;
+    }
+
+    
+    /*Hamburguer menu*/
+
+  .hamburger-menu {
+    display: none; 
+    cursor: pointer;
+}
+
+  .nav-hamburguer{
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  
+  
+  .bar {
+      width: 25px;
+      height: 3px;
+      background-color: var(--color-primary);
+      margin: 5px auto;
+      transition: 0.4s;
+  }
+
+    .registration-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }   
+
+
+    .registration-form {
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        width: 50%; 
+        text-align: center;
+        margin-right: 20px; 
+    }
+    
+    .registration-image img {
+        max-width: 100%;
+        height: 310px;
+        border-radius: 10px;
+        opacity: .8;
+    }
+    
+    .registration-form h2 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+    
+    form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        text-align: left;
+    }
+    
+    label {
+        font-size: 1rem;
+        margin-bottom: 5px;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+        width: 90%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding-left: 10px;
+    }
+
+    input[type="text"]:hover,
+    input[type="email"]:hover,
+    input[type="password"]:hover {
+        width: 90%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding-left: 10px;
+        background-color: var(--color-accent);
+        opacity: .3;
+    }
+    
+    button[type="submit"] {
+        grid-column: span 2; 
+        background-color: var(--color-primary);
+        color: #ffffff; 
+        height: 30px;  
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    button[type="submit"]:hover {
+        background-color: var(--color-secondary);
+    }
+
+    footer {
+        background-color: var(--color-accent);
+        opacity: .7;
+        color: var(--color-primary);
+        padding: 10px 5px;
+        padding-left: 5%; /* Espacio a la izquierda */
+        padding-right: 5%;  
+      }
+      
+      .foot {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      
+      ul li {
+        margin-bottom: 10px;
+      }
+      
+      a {
+        text-decoration: none;
+        color: var(--color-primary);
+        opacity: 1;
+      }
+      
+      .icon {
+        margin-right: 5px; 
+        font-size: 1.2em; 
+      }
+      
+      .copy-right {
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        margin-top: 5px; 
+      }
+      
+      a img, p img {
+        vertical-align: middle;
+        margin-bottom: 4px; 
+      }
+      
+      img {
+        height: 25px;
+       
+      }
+
+      /* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+
+    header {
+        padding: 5px 0;
+    }
+
+    .registration-form {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .registration-image img {
+        height: 200px;
+    }
+
+    .hamburger-menu {
+        display: block; /* Mostramos el menú de hamburguesa en pantallas pequeñas */
+        margin-right: 20px;
+     }
+    
+      
+      
+      nav {
+          display: none; /* Ocultamos el menú de navegación en pantallas pequeñas */
+      }
+    
+      
+      .nav-hamburguer.active {
+         max-height: 800px;
+         background-color: var(--color-accent); /* Color de fondo blanco */
+         box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+         text-align: left;
+         margin-left: 60%;
+         
+      }
+      .nav-hamburguer li {
+        display: flex;
+         flex-direction: column;
+      }
+}
+
+
+
+/* Media query para pantallas medianas  */
+@media (min-width: 769px) and (max-width: 1024px) {
+    
+    header {
+        padding: 10px 0;
+    }
+
+    .registration-image img {
+        height: 250px;
+    }
+}
+
+/* Media query para pantallas grandes  */
+@media (min-width: 1025px) {
+    
+    header {
+        padding: 15px 0;
+    }
+
+    .registration-form {
+        width: 40%;
+    }
+
+    .registration-image img {
+        height: 300px;
+    }
+}
+
+
+/* Estilos para footer tablets */
+@media (max-width: 768px) {
+    .foot {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    ul li {
+      margin-bottom: 0; /* Eliminar el margen entre elementos de la lista */
+    }
+  }
+  
+  /* Estilos para footer celulares */
+  @media (max-width: 480px) {
+    footer {
+      padding: 10px;
+    }
+  }
+  

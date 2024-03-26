@@ -1,0 +1,345 @@
+    /* Definir variables para la paleta de colores */
+    :root {
+        --color-primary: #1746a2;
+        --color-secondary: #Ff731d;
+        --color-accent: #bbb737f8;
+        --color-background: #579df7;
+        --color-text1:#ffffff;
+        --color-text2:#072566;
+        --color-border1:#ccc;
+        --color-backForm1:#ffffffcc;
+        --color-shadowForm1:#00000033;
+    }   
+ 
+    
+    /* Establecer una imagen de fondo */
+    body {
+
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-image: url('../images/playaMuelle.jpg');
+        background-size: cover; 
+        background-attachment: fixed; 
+    }
+    
+
+    header {
+        display: grid;
+        grid-template-columns: 1fr auto; 
+        align-items: center; 
+        background-color: var(--color-accent);
+        opacity: 1;
+        padding: 10px 0;
+    }   
+
+    header:hover {
+        opacity: .9  ;
+    }
+
+    .logo {
+        text-align: left; 
+        padding-left: 10% ;
+        
+    }
+
+    nav {
+        text-align: right; 
+    }
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        display: inline;
+        margin-right: 20px; 
+        
+    }
+
+    a {
+        text-decoration: none;
+        color: var(--color-primary); 
+        font-weight: bold;
+        
+    }
+
+    a:hover {
+        text-decoration: none;
+        color: var(--color-secondary);
+        font-weight: bold;
+
+    }
+
+    li a img{
+        height: 30px;
+    }
+
+    /*Hamburguer menu*/
+
+  .hamburger-menu {
+    display: none; 
+    cursor: pointer;
+}
+
+  .nav-hamburguer{
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  
+  
+  .bar {
+      width: 25px;
+      height: 3px;
+      background-color: var(--color-primary);
+      margin: 5px auto;
+      transition: 0.4s;
+  }
+  
+  
+    /* Estilos para la sección de inicio (banner) */
+.banner {
+  text-align: center;
+  padding: 0; 
+  background-image: url('../images/playaMuelle.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  margin-top: 50px; 
+  color: #ccc;
+  animation: cambiaColor 3s linear infinite alternate;
+  -webkit-animation: cambiaColor 3s linear infinite alternate;
+
+}
+
+.banner img {
+  max-width: 100%;
+  width: 80%; 
+  height: auto; 
+  max-height: 300px; 
+}
+
+    /* Estilos para la sección de ofertas */
+        .offerts {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .offert {
+            /*background-color: var(--color-primary);*/
+            background: rgb(23,70,162);
+            background: linear-gradient(90deg, var(--color-primary) 0%, var(--color-secondary) 35%, var(--color-background) 100%);
+            color: #fff;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            display: inline-block;
+            width: calc(33.33% - 40px);
+            opacity: .8;
+            
+    }
+
+            
+            .offert h3 {
+            font-size: 1.5rem;
+            margin: 10px 0;
+            animation: cambiaColor 3s linear infinite alternate;
+            -webkit-animation: cambiaColor 3s linear infinite alternate;
+    }
+
+        .offert p {
+            font-size: 1rem;
+            margin: 10px 0;
+        }
+
+        .offert a {
+            color: var(--color-accent);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .logo img {
+            max-width: 100px; 
+            height: auto;
+            
+        }
+
+        /* Estilos para la sección de ofertas */
+     
+       
+
+        .offert img {
+            max-width: 100%; 
+            height: 100%; 
+            width: 100%; 
+            max-height: 200px; 
+            object-fit: cover;
+        }
+
+        @keyframes cambiaColor {
+            0% {
+              color:#0404ff;
+            }
+
+            50% {
+                color:#fdfdf8
+            }
+           
+            100% {
+              color:#0f0102;
+            }
+          }
+
+        /* Aplicar animación de vibración al hacer hover sobre las ofertas */
+        .offert:hover {
+            animation: vibrar 0.3s ;   
+            opacity: 1;
+        }
+        footer {
+            background-color: var(--color-accent);
+            opacity: .7;
+            color: var(--color-primary);
+            padding: 10px 5px;
+            padding-left: 5%; 
+            padding-right: 5%;  
+          }
+          
+          .foot {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+          
+          ul {
+            list-style-type: none;
+            padding: 0;
+          }
+          
+          ul li {
+            margin-bottom: 10px;
+          }
+          
+          a {
+            text-decoration: none;
+            color: var(--color-primary);
+            opacity: 1;
+          }
+          
+          .icon {
+            margin-right: 5px; 
+            font-size: 1.2em; 
+          }
+          
+          .copy-right {
+            display: flex;
+            justify-content: center; 
+            align-items: center;
+            margin-top: 5px; 
+          }
+          
+          a img, p img {
+            vertical-align: middle;
+            margin-bottom: 4px; 
+          }
+          
+          img {
+            height: 25px;
+           
+          }
+
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+  header {
+    padding: 5px 0;
+    
+  }
+
+  .hamburger-menu {
+    display: block; /* Mostramos el menú de hamburguesa en pantallas pequeñas */
+    margin-right: 20px;
+ }
+
+  
+  
+  nav {
+      display: none; /* Ocultamos el menú de navegación en pantallas pequeñas */
+  }
+
+  
+  .nav-hamburguer.active {
+     max-height: 800px;
+     background-color: var(--color-accent); /* Color de fondo blanco */
+     box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+     text-align: left;
+     margin-left: 60%;
+     
+  }
+  .nav-hamburguer li {
+    display: flex;
+     flex-direction: column;
+  }
+}
+
+  .offert {
+    width: 80%;
+  }
+}
+
+/* Media query para pantallas medianas */
+@media (min-width: 769px) and (max-width: 1024px) {
+  header {
+    padding: 10px 0;
+  }
+
+  .offert {
+    width: calc(50% - 40px);
+  }
+}
+
+/* Media query para pantallas grandes */
+@media (min-width: 1025px) {
+  header {
+    padding: 15px 0;
+  }
+
+   .offert {
+    width: calc(33.33% - 40px);
+  }
+}
+
+/*clima*/
+
+#clima-info {
+  font-size: 3em; 
+  text-align: center;
+  height: 60vh; 
+  width: 100%; 
+  margin-top: 20px;
+}
+
+/* Estilos para footer tablets */
+@media (max-width: 768px) {
+  .foot {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  ul li {
+    margin-bottom: 0; /* Eliminar el margen entre elementos de la lista */
+  }
+}
+
+/* Estilos para footer celulares */
+@media (max-width: 480px) {
+  footer {
+    padding: 10px;
+  }
+}
+
+
+
+
+

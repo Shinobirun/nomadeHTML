@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/contacto.css">
+    <link rel="icon" type="image/png" sizes="16x16"  href="../favicons/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <title>Nosotros - Agencia de Turismo</title>
+</head>
+<body>
+  <header>
+    <div class="logo">
+        <img src="../images/logo5.png" alt="Logo de Nosotros">
+    </div>
+    <nav>
+        <ul>
+            <li><a href="../index.html"><img src="../images/icons/travelling_2060284.png" alt="Inicio"> Inicio</a></li>
+            <li><a href="./cotizacionDolar.html"><img src="../images/icons/map_1934285.png" alt="Tours"> Clima</a></li>
+            <li><a href="./contacto.html"><img src="../images/icons/reception_1934306.png" alt="Contacto"> Contacto</a></li>
+            <li><a href="./registro.html"><img src="../images/icons/rating_1934299.png" alt="Registrarse"> Registrarse</a></li>
+            <li><a href="./login.html       "><img src="../images/icons/luggage_1934282.png" alt="Iniciar sesión"> Iniciar sesión</a></li>
+        </ul>
+    </nav>
+    
+    <div class="hamburger-menu">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+    <nav class="nav-hamburguer">
+      <ul>
+          <li><a href="../index.html"><img src="../images/icons/travelling_2060284.png" alt="Inicio"> Inicio</a></li>
+          <li><a href="./cotizacionDolar.html"><img src="../images/icons/map_1934285.png" alt="Clima"> Clima</a></li>
+          <li><a href="./contacto.html"><img src="../images/icons/reception_1934306.png" alt="Contacto"> Contacto</a></li>
+          <li><a href="./registro.html"><img src="../images/icons/rating_1934299.png" alt="Registrarse"> Registrarse</a></li>
+          <li><a href="./login.html       "><img src="../images/icons/luggage_1934282.png" alt="Iniciar sesión"> Iniciar sesión</a></li>
+      </ul>
+    </nav>
+
+    
+    
+</header>
+    
+
+    <main>
+        <div class="contenedor">
+    
+            <div class="formulario">
+              <h2>Contactános</h2>
+              <form @submit.prevent="enviarConsulta">
+                <div>
+                  
+                  <input type="text" v-model="nombre" required placeholder="Tu nombre"/>
+                </div>
+                <div>
+                  
+                  <input type="email" v-model="email" required placeholder="Correo Electrónico"/>
+                </div>
+      
+                <div>
+                  
+                  <input type="tel" v-model="tel" required placeholder="Teléfono"/>
+                </div>
+                
+      
+                <div>  
+                  <textarea v-model="mensaje" required placeholder="Dejanos aca tu consulta, saludo, o comentario."></textarea>
+                </div>
+                <button type="submit">Enviar Consulta</button>
+              </form>
+            </div>
+
+            <div class="iframe">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.8253499187767!2d-58.423588810360314!3d-34.58328548669217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb581f543de5d%3A0x192f65363601ef13!2sAv.%20Sta.%20Fe%203954-3902%2C%20C1425BHB%20CABA!5e0!3m2!1ses-419!2sar!4v1695125649356!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+      <div class="foot">
+        <div>
+          <h3 class="title">¡Síguenos en las redes sociales!</h3>
+          <p>Descubre las mejores ofertas y destinos.</p>
+          <ul>
+            <li>
+              <a href="#"><img src="../images/icons/fac.png" alt="Facebook">  Facebook</a>
+            </li>
+            <li>
+              <a href="#"><img src="../images/icons/twit.png" alt="Twitter">  Twitter</a>
+            </li>
+            <li>
+              <a href="#"><img src="../images/icons/inst.png" alt="Intagram">  Instagram</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="title">Contacto</h3>
+          <p>
+            <img src="../images/icons/phone.png" alt="Telefono"> Teléfono: 123-456-789
+          </p>
+          <p>
+            <img src="../images/icons/mail.png" alt="Mail"> Correo electrónico: nosotrosMunTurismo@gmail.com
+          </p>
+        </div>
+      </div>
+      <div class="copy-right">
+        <p>&copy; 2023 Nosotros Turismo. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+  
+  <script src="../scripts/script.js"></script>   
+</body>
+</html>
