@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animación de Texto</title>
+  <link rel="stylesheet" href="anima.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="animate__animated animate__fadeIn">N</h1>
+    <h1 class="animate__animated animate__fadeIn">O</h1>
+    <h1 class="animate__animated animate__fadeIn">M</h1>
+    <h1 class="animate__animated animate__fadeIn">A</h1>
+    <h1 class="animate__animated animate__fadeIn">D</h1>
+    <h1 class="animate__animated animate__fadeIn">E</h1>
+    <div class="slogan animate__animated animate__fadeIn an_anited_slow">
+      <p>Tu espíritu te lo pide, nosotros te llevamos.</p>
+  
+    </div>
+  </div>
+  <script>
+    // Marcar la página de landing como visitada
+    sessionStorage.setItem('visitedLanding', 'true');
+  
+    // Redirigir al index después de 10 segundos si no se ha establecido la variable de sesión
+    setTimeout(function() {
+      window.location.href = "index.html";
+    }, 8000); // 10000 milisegundos = 10 segundos
+  </script>
+  
+
+  </body>
+</body>
+</html>

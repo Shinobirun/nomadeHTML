@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('mujeres-turistas-mano-tienen-feliz-mapa-viaje.jpg'); 
+  background-size: cover; /* Ajusta el tamaño de la imagen de fondo para cubrir todo el contenedor */
+  background-position: center; /* Centra la imagen de fondo */
+}
+
+h1 {
+  font-size: 16em;
+  opacity: 0;
+  margin: 0 5px; /* Espacio entre las letras */
+  color: #ffff
+}
+
+.animate__animated {
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s;
+}
+
+.an_anited_slow {
+    animation-duration: 4s;
+   
+}
+
+.animate__fadeIn {
+  animation-name: fadeIn;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.slogan {
+  text-align: center;
+  font-size: 2em;
+  margin-top: 40%;
+  color:#ffff
+}
