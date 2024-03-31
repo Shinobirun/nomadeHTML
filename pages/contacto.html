@@ -49,26 +49,28 @@
     
             <div class="formulario">
               <h2>Contactános</h2>
-              <form @submit.prevent="enviarConsulta">
+              <form @submit.prevent="enviarConsulta" action="https://formsubmit.co/9ee759d78356f500a22fb4ee1752ebb5" method="POST">
                 <div>
                   
-                  <input type="text" v-model="nombre" required placeholder="Tu nombre"/>
+                  <input type="text" v-model="nombre" required placeholder="Tu nombre" name="name"/>
                 </div>
                 <div>
                   
-                  <input type="email" v-model="email" required placeholder="Correo Electrónico"/>
+                  <input type="email" v-model="email" required placeholder="Correo Electrónico" name="email"/>
                 </div>
       
                 <div>
                   
-                  <input type="tel" v-model="tel" required placeholder="Teléfono"/>
+                  <input type="tel" v-model="tel" required placeholder="Teléfono" name="phone"/>
                 </div>
                 
       
                 <div>  
-                  <textarea v-model="mensaje" required placeholder="Dejanos aca tu consulta, saludo, o comentario."></textarea>
+                  <textarea v-model="mensaje" required placeholder="Dejanos aca tu consulta, saludo, o comentario." name="coment"></textarea>
                 </div>
                 <button type="submit">Enviar Consulta</button>
+                <input type = "hidden" name"-next" value="https://nomadetur.netlify.app">
+                <input type="hidden" name="_captcha" value="false">
               </form>
             </div>
 
