@@ -1,0 +1,42 @@
+
+
+NOMADE TURISMO
+Descripción:  Es una aplicación web que ofrece paquetes turísticos, agrupados por temática, en distintos lugares del mundo
+Es una aplicación destinada a la familia al completo, al deportista , a los aventureros, a los románticos sin importar la edad.
+
+Estructura:
+El sitio está estructurado de la siguiente forma:
+Página inicial: con la presentación de los diferentes paquetes genéricos, formularios de Inicio de sesión, registro y contacto. Con una aplicación con los datos del clima actualizados y links en cada paquete genérico que lleva a las ofertas de dicho paquete.
+Páginas secundarias: Cada paquete contiene 6 ofertas (lo que hace un total de 36) diferentes de la misma temática con target diferencial, familia, jovenes, gente mayor. Un link dentro de cada oferta hacia un formulario de solicitud de presupuesto.
+Estilo Visual: Página con fondo fijo con temática costera, donde los colores que prevalecen son naranjas, celestes, rojizos, amarillos y colores oscuros. Donde cada paquete genérico tiene una imágen característica que representa dicho paquete. 
+Con respecto a la tipografía se utilizó roboto, sanserif.
+
+Listado del contenido del sitio:
+- Páginas conteniendo las ofertas de los distintos paquetes, donde se incluirá un pequeño texto explicativo, los serivicios ofrecidos, los días que durará cada tour, y un link hacia un formulario donde se solicita presupuesto para cada oferta (en el presupuesto se colocaran los datos del solicitante, la presunta fecha de salida (para poder determinar si es alta, media o baja temporada lo que determinará en definitiva el precio) y se enviará a Nosotros Turismo donde un agente de viajes se hará cargo de responder la solicitud).
+- Un formulario de registro en la página principal para que el usuario interesado pueda formar parte de la comunidad Nosotros Turismo. 
+- Un formulario inicio de sesión para una información más personalizada.
+- Un formulario de contacto donde los usuarios puedan dejar sugerencias o solicitar información variada.
+- Una aplicación, donde podrá verse la temperatura actual en la Ciudad de Buenos Aires.
+
+Responsabilidades del equipo:
+Adrian Latorre: El desarrollo y diseño (estilo, colores y tipografía) de la página de inicio y del resto del sitio, junto con el armado del producto final. Formularios de registro, inicio de sesión y contacto.
+- Desarrollo y contenido de los paquetes y ofertas
+Estefania Quezada: El desarrollo y diseño (estilo, colores y tipografía) de la página de inicio y del resto del sitio, junto con el armado del producto final. Formularios de registro, inicio de sesión y contacto.
+- Desarrollo y contenido de los paquetes y ofertas a cargo de
+
+
+Recursos Externos:
+- Fotos de cada paquete genérico y fotos de cada oferta específica.
+- Api => clima
+- Api => mail (para que los formularios sean enviados con ese mail)
+
+Desarrollos Futuros y Mejoras Potenciales:
+- Los diferentes formularios generarán una base de datos de usuarios, incluyendo no solo sus datos ingresados sino, presupuestos solicitados, viajes realizados, puntos obtenidos.
+- Generará un sistema de puntos dependiendo de cuanto ha entrado, presupuestos solicitados, viajes realizados. Este sistema generará un puntaje que dará acceso a diferentes ofertas y bonidicaciones dependiendo del monto de puntos. Para acceder a éste sistema de puntos el usuario debe estar registrado.
+- La base de datos incluirá tres tablas: usuario, paquetes, historial de viajes.
+- El proyecto se migrará a VUE.js por motivos funcionales. 
+
+Fecha de entrega:   
+
+
+

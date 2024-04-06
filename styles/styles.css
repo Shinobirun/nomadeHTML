@@ -130,7 +130,7 @@
         .offert {
             /*background-color: var(--color-primary);*/
             background: rgb(23,70,162);
-            background: linear-gradient(90deg, var(--color-primary) 0%, var(--color-secondary) 35%, var(--color-background) 100%);
+            background: linear-gradient(0deg, var(--color-primary) 0%, var(--color-secondary) 35%, var(--color-background) 100%);
             color: #fff;
             padding: 20px;
             margin: 20px;

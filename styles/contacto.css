@@ -19,7 +19,7 @@ body {
   background-attachment: fixed;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  
 }
 
 header {
@@ -103,7 +103,7 @@ main {
 }
 
 .contenedor {
-  display: block;
+  display: flex;
   justify-content: center;
   align-items: center;
   height: auto;
@@ -113,6 +113,7 @@ main {
 
 .formulario,
 .iframe {
+  flex: 1;
   background-color: var(--color-backForm1);
   color: var(--color-text1);
  
