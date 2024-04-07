@@ -2,7 +2,7 @@
     :root {
         --color-primary: #1746a2;
         --color-secondary: #Ff731d;
-        --color-accent: #bbb737f8;
+        --color-accent: #ffffff;
         --color-background: #579df7;
         --color-text1:#ffffff;
         --color-text2:#072566;
@@ -286,7 +286,7 @@
   .offert {
     width: 80%;
   }
-}
+
 
 /* Media query para pantallas medianas */
 @media (min-width: 769px) and (max-width: 1024px) {
