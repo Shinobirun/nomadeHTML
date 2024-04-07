@@ -106,29 +106,38 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: auto;
-  background-color: var(--color-backForm1);
-  opacity: .8;
+  height: 85vh;
+  margin: 20px;
+  
+  
+  
 }
 
 .formulario,
 .iframe {
   flex: 1;
-  background-color: var(--color-backForm1);
+  
   color: var(--color-text1);
- 
+
 }
 
 .formulario{
+  flex: 1 0 40%;
   padding: 30px;
   margin: 5px;
   margin-bottom: 0;
+  width: 70%;
+
+  
 }
 
 .iframe {
+  flex: 1 0 40%;
   width: 97vw;
   padding: 10px;
   margin-right: 5px;
+  margin-left: 20px;
+  width: 30%;
 }
 
 button {
@@ -152,8 +161,8 @@ textarea:hover {
   border-radius: 5px;
   padding-left: 10px;
   background-color: var(--color-accent);
-  opacity: 1;
-  -webkit-filter: brightness(1.1);
+  
+  
 }
 
 input,
@@ -162,7 +171,8 @@ textarea {
   padding: 10px;
   margin: 10px 0;
   font-size: 16px;
-  transition: filter 0.3s;
+  border: 1px solid var(--color-border1);
+  border-radius: 5px;
   color: black;
   opacity: 1;
 }
@@ -170,7 +180,8 @@ textarea {
 h2 {
   margin: 20px 0;
   text-align: center; 
-  color: var(--color-text2);
+  color: var(--color-text1);
+  font-size: 60px;
 }
 
 .whatsapp-button {
