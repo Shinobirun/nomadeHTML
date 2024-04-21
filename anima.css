@@ -1,18 +1,19 @@
+/* Estilos para pantallas grandes */
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: url('mujeres-turistas-mano-tienen-feliz-mapa-viaje.jpg'); 
-  background-size: cover; /* Ajusta el tamaño de la imagen de fondo para cubrir todo el contenedor */
-  background-position: center; /* Centra la imagen de fondo */
+  background-image: url('mujeres-turistas-mano-tienen-feliz-mapa-viaje.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
 h1 {
   font-size: 16em;
   opacity: 0;
-  margin: 0 5px; /* Espacio entre las letras */
-  color: #ffff
+  margin: 0 5px;
+  color: #ffffff;
 }
 
 .animate__animated {
@@ -22,8 +23,7 @@ h1 {
 }
 
 .an_anited_slow {
-    animation-duration: 4s;
-   
+  animation-duration: 4s;
 }
 
 .animate__fadeIn {
@@ -43,5 +43,28 @@ h1 {
   text-align: center;
   font-size: 2em;
   margin-top: 40%;
-  color:#ffff
+  color: #ffffff;
+}
+
+/* Estilos para tablets */
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 8em; /* Ajusta el tamaño del texto */
+  }
+  .slogan {
+    font-size: 1.5em; /* Ajusta el tamaño del eslogan */
+    margin-top: 30%; /* Ajusta el margen superior */
+  }
+}
+
+/* Estilos para teléfonos móviles */
+@media only screen and (max-width: 480px) {
+  h1 {
+    font-size: 4em; /* Ajusta el tamaño del texto */
+    margin: 0 2px; /* Reduce el espacio entre letras */
+  }
+  .slogan {
+    font-size: 1em; /* Ajusta el tamaño del eslogan */
+    margin-top: 20%; /* Ajusta el margen superior */
+  }
 }

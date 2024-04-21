@@ -77,7 +77,11 @@ a:hover {
 li a img{
   height: 30px;
 }
-S
+.logo img {
+  max-width: 250px; 
+  height: auto;
+  
+}
    
    
    /*Hamburguer menu*/

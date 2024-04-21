@@ -1,15 +1,16 @@
     /* Definir variables para la paleta de colores */
     :root {
-        --color-primary: #1746a2;
-        --color-secondary: #Ff731d;
-        --color-accent: #ffffff;
-        --color-background: #579df7;
-        --color-text1:#ffffff;
-        --color-text2:#072566;
-        --color-border1:#ccc;
-        --color-backForm1:#ffffffcc;
-        --color-shadowForm1:#00000033;
-    }   
+      --color-primary: #1746a2;
+      --color-secondary: #ff731d;
+      --color-accent: #ffffff;
+      --color-background: #579df7;
+      --color-text1: #ffffff;
+      --color-text2: #072566;
+      --color-border1: #ccc;
+      --color-backForm1: #ffffffcc;
+      --color-shadowForm1: #00000033;
+    }
+     
  
     
     /* Establecer una imagen de fondo */
@@ -38,11 +39,17 @@
     }
 
     .logo {
-        text-align: left; 
-        padding-left: 10% ;
-        height: 50px;
-        
+      text-align: left;
+      padding-left: 10%;
+      
+
     }
+
+    .logo img {
+      height: 250px;
+    }
+
+
 
     nav {
         text-align: right; 
@@ -162,7 +169,7 @@
         }
 
         .logo img {
-            max-width: 100px; 
+            max-width: 250px; 
             height: auto;
             
         }
@@ -287,7 +294,7 @@
   .offert {
     width: 80%;
   }
-
+}
 
 /* Media query para pantallas medianas */
 @media (min-width: 769px) and (max-width: 1024px) {
